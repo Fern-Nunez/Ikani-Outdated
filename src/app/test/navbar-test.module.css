@@ -1,0 +1,75 @@
+.headerWrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: ease 0.3s;
+    color: white;
+}
+.head {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.menuContainer {
+    display: flex;
+    align-items: center;
+}
+
+.menuIconContainer, 
+.menuPulseContainer {
+    display: none;
+}
+
+.menuLinks {
+    display: block;
+    position: static;
+    background: none;
+    padding: 0;
+}
+
+.menuItems {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    opacity: 1;
+    transform: none;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.2s ease;
+    text-transform: capitalize;
+}
+
+.link:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Style for Contact button */
+.menuItems a:last-child .link {
+    background-color: #008B64;
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+    font-weight: 500;
+}
+
+.menuItems a:last-child .link:hover {
+    background-color: rgb(12, 161, 113);
+}
+
+.serviceDivider {
+    display: none;
+}

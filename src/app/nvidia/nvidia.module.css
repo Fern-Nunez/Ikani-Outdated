@@ -1,0 +1,54 @@
+.bodyWrapper {
+    color: white;
+    background-color: #1b1b1b;
+}
+
+/* Page */
+.top {
+    padding-top: 6em;
+    background-color: #76B900;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 900;
+    padding-bottom: 0.5em;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.section {
+    padding: 2em;
+}
+
+.sectionTitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0.5em 0;
+}
+
+.sectionSubtitle {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.nextPageContainer {
+    background-color: #76B900;
+    margin-top: 2em;
+}
+
+.nextPageTitle {
+    font-size: 2em;
+    padding: 1em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerContent {
+    padding: 1.2em;
+}

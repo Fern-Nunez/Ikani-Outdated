@@ -1,0 +1,24 @@
+.footer{
+    background-color: #1b1b1b;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.footerContent{
+    padding: 1em;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.footerLinks{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+    padding-top: 0.5em;
+    font-size: clamp(1em, 2vw, 1.4em);
+}

@@ -1,0 +1,273 @@
+/* Mobile & Tablet Styles */
+.headerWrapper {
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    transition: ease 0.3s;
+    color: white;
+    left: 0;
+}
+
+.head {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* Menu Icon Container */
+.menuIconContainer {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    z-index: 55;
+    margin-right: 1em;
+}
+
+/* Menu Icon Animation */
+.menuIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menuIcon.rotate {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+.menuIcon.visible {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* Close Icon Animation */
+.closeIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: rotate(-90deg);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 55;
+}
+
+.closeIcon.visible {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.closeIcon.closing {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+/* Menu Links Container */
+.menuLinks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1b1b1b;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menuLinks.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Menu Items Animation */
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-transform: uppercase;
+}
+
+.menuItems.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navigation Links */
+.link {
+    font-size: 3.3em;
+    font-weight: 900;
+    padding: 1rem 0;
+    transition: transform 0.3s ease;
+}
+
+.link:hover {
+    transform: translateX(10px);
+}
+
+/* Pulse Animation Container */
+.menuPulseContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 40;
+}
+
+/* Opening Pulse Effect */
+.menuPulse {
+    position: fixed;
+    top: 27px;
+    right: 2em;
+    width: 10px;
+    height: 10px;
+    background-color: #1b1b1b;
+    border-radius: 50%;
+    transform: scale(0);
+    z-index: 45;
+}
+
+.menuPulse.active {
+    animation: pulseExpand 0.5s ease-out forwards;
+}
+
+.menuPulse.closing {
+    animation: pulseContract 0.5s ease-out forwards;
+}
+
+/* Closing Ring Effect */
+.closeRing {
+    position: fixed;
+    top: 27px;
+    right: 2em;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #1b1b1b;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    z-index: 45;
+    pointer-events: none;
+}
+
+.closeRing.active {
+    animation: ringPulse 0.5s ease-out forwards;
+}
+
+/* Service Divider */
+.serviceDivider {
+    outline: none;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 0;
+}
+
+/* Animation Keyframes */
+@keyframes pulseExpand {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(200);
+    }
+}
+
+@keyframes pulseContract {
+    0% {
+        transform: scale(200);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes ringPulse {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+/* Desktop Styles (1024px and above) */
+@media (min-width: 1024px) {
+    .menuContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .menuIconContainer, 
+    .menuPulseContainer {
+        display: none;
+    }
+
+    .menuLinks {
+        display: block;
+        position: static;
+        background: none;
+        padding-right: 1em;
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+    }
+
+    .menuItems {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+        opacity: 1;
+        transform: none;
+        padding: 0;
+        text-transform: capitalize;
+    }
+
+    .link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: normal;
+        padding: 0;
+        transition: color 0.2s ease;
+    }
+
+    .link:hover {
+        color: rgba(255, 255, 255, 0.8);
+        transform: none;
+    }
+
+    /* Style for Contact button */
+    .menuItems a:last-child .link {
+        background-color: #008B64;
+        padding: 0.5rem 3rem;
+        border-radius: 10px;
+        transition: background-color 0.2s ease;
+    }
+
+    .menuItems a:last-child .link:hover {
+        background-color: rgb(12, 161, 113);
+    }
+
+    .serviceDivider {
+        display: none;
+    }
+}
