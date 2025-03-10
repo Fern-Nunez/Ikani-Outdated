@@ -61,7 +61,7 @@ const Process = () => {
                   DESIGNING
                 </div>
                 <div className={styles.processDesc}>
-                  Armed with a solid foundation, we enter the Design phase, where our team crafts a visually engaging and intuitive experience. We go beyond aesthetics, designing an interface that supports your business goals—whether that's increasing engagement, improving user journeys, or driving conversions. Our goal is to create a digital environment where users naturally connect with your brand.
+                  Armed with a solid foundation, we enter the Design phase, where our team crafts a visually engaging and intuitive experience. We go beyond aesthetics, designing an interface that supports your business goals—whether that&apos;s increasing engagement, improving user journeys, or driving conversions. Our goal is to create a digital environment where users naturally connect with your brand.
                 </div>
               </div>
             )}
@@ -87,7 +87,7 @@ const Process = () => {
                   DEVELOPMENT
                 </div>
                 <div className={styles.processDesc}>
-                  With the design in place, we bring the solution to life in the Development phase. Our team of developers builds a high-performing, responsive platform using the latest technologies, ensuring seamless functionality across all devices. From custom features to integrated tools, every aspect is tailored to meet your business needs, creating a solution that's both robust and scalable.
+                  With the design in place, we bring the solution to life in the Development phase. Our team of developers builds a high-performing, responsive platform using the latest technologies, ensuring seamless functionality across all devices. From custom features to integrated tools, every aspect is tailored to meet your business needs, creating a solution that&apos;s both robust and scalable.
                 </div>
               </div>
             )}
@@ -113,7 +113,7 @@ const Process = () => {
                   PUBLISHING
                 </div>
                 <div className={styles.processDesc}>
-                  In the Publish phase, we meticulously prepare your solution for launch, conducting rigorous testing to ensure every detail is flawless. Once live, we manage the deployment process and provide ongoing support to keep your digital presence secure, optimized, and aligned with evolving business goals. This isn't just a launch—it's the beginning of a solution that grows with your brand.
+                  In the Publish phase, we meticulously prepare your solution for launch, conducting rigorous testing to ensure every detail is flawless. Once live, we manage the deployment process and provide ongoing support to keep your digital presence secure, optimized, and aligned with evolving business goals. This isn&apos;t just a launch—it&apos;s the beginning of a solution that grows with your brand.
                 </div>
               </div>
             )}

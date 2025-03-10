@@ -56,9 +56,9 @@ const Navbar = ({ initialColor, scrollColor }) => {
             style={{ backgroundColor: navbarColor }}
         >
             <header className={styles.head}>
-                <a href="/" className={styles.logo}>
+                <Link href="/" className={styles.logo}>
                     IKANI
-                </a>
+                </Link>
                 <div className={styles.menuContainer}>
                     <div className={styles.menuIconContainer}>
                         <Image
@@ -107,29 +107,29 @@ const Navbar = ({ initialColor, scrollColor }) => {
                                 isMenuVisible ? styles.visible : ""
                             }`}
                         >
-                            <a
+                            <Link
                                 href="/#work"
                                 className={styles.link}
                                 onClick={handleMenuClick}
                             >
                                 Work
-                            </a>
+                            </Link>
                             <hr className={styles.serviceDivider}></hr>
-                            <a
+                            <Link
                                 href="/#about"
                                 className={styles.link}
                                 onClick={handleMenuClick}
                             >
                                 About
-                            </a>
+                            </Link>
                             <hr className={styles.serviceDivider}></hr>
-                            <a
+                            <Link
                                 href="/#services"
                                 className={styles.link}
                                 onClick={handleMenuClick}
                             >
                                 Services
-                            </a>
+                            </Link>
                             <hr className={styles.serviceDivider}></hr>
                             <Link href={"/contact"}>
                                 <div

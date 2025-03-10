@@ -155,7 +155,7 @@ export default function Home() {
                     Nvidia         
                   </div>
                   <div className={styles.workSubtitle}>
-                    Brand Makeover for Tech's Biggest Innovator
+                    Brand Makeover for Tech&apos;s Biggest Innovator
                   </div>
                   <div className={styles.workDesc}>
                     <div className={styles.desc}>Web Design</div>
@@ -182,7 +182,7 @@ export default function Home() {
                     Apple
                   </div>
                   <div className={styles.workSubtitle}>
-                    Redesign for the world's largest phone company
+                    Redesign for the world&apos;s largest phone company
                   </div>
                   <div className={styles.workDesc}>
                     <div className={styles.desc}>Web Design</div>
@@ -318,7 +318,7 @@ export default function Home() {
           </div>
           <Link href={"/contact"}>
             <button className={styles.contactSectionButton}>
-              Let's Get Started
+              Let&apos;s Get Started
             </button>
           </Link>
           <div className={`${styles.outlineText} ${styles.contactText2}`}>
