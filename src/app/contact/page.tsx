@@ -1,12 +1,10 @@
 "use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from 'react';
 import styles from "./contact.module.css";
 import Navbar from "../components/navbar";
 import CustomCursor from '../components/customCursor';
 import Footer from '../components/footer';
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -16,9 +14,27 @@ export default function Contact() {
     <div className={styles.bodyWrapper}>
       <CustomCursor color="#008B64" />
       <div className={styles.bloomSection}>
-        <img src="/images/bloom.svg" alt="bloom" className={`${styles.bloom} ${styles.bloom1}`} />
-        <img src="/images/bloom.svg" alt="bloom" className={`${styles.bloom} ${styles.bloom2}`} />
-        <img src="/images/bloom.svg" alt="bloom" className={`${styles.bloom} ${styles.bloom3}`} />
+          <Image 
+            src="/images/bloom.svg" 
+            alt="bloom" 
+            className={`${styles.bloom} ${styles.bloom1}`} 
+            width={500} 
+            height={500}
+          />
+          <Image 
+            src="/images/bloom.svg" 
+            alt="bloom" 
+            className={`${styles.bloom} ${styles.bloom2}`} 
+            width={500} 
+            height={500}
+          />
+          <Image 
+            src="/images/bloom.svg" 
+            alt="bloom" 
+            className={`${styles.bloom} ${styles.bloom3}`} 
+            width={500} 
+            height={500}
+          />
       </div>
         <div className={styles.contentContainer}>
 
