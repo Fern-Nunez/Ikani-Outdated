@@ -1,19 +1,4 @@
 /*---------------------------------------------------------------------------------------------------------------Root*/
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent any unintended scrolling */
-}
-
-:root {
-    --content-max-width: min(100%, 2000px); /* Adjust this value based on your needs */
-    --content-padding: 2em;
-
-    --bloom-size-desktop: clamp(150px, 25vw, 300px);
-    --bloom-size-tablet: clamp(100px, 20vw, 250px);
-    --bloom-size-mobile: clamp(80px, 15vw, 150px);
-    --bloom-offset: clamp(-100px, -10vw, -50px);
-}
 .bodyWrapper {
     color: white;
     background-color: #1b1b1b;

@@ -4,11 +4,21 @@
 
 /* Define the custom font in the base layer */
 @layer base {
-  :root {
-    --font-poppins: 'Poppins', sans-serif;
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent any unintended scrolling */
+    font-family: var(--font-poppins);
   }
 
-  body {
-    font-family: var(--font-poppins);
+  :root {
+    --font-poppins: 'Poppins', sans-serif;
+    --content-max-width: min(100%, 2000px); /* Adjust this value based on your needs */
+    --content-padding: 2em;
+
+    --bloom-size-desktop: clamp(150px, 25vw, 300px);
+    --bloom-size-tablet: clamp(100px, 20vw, 250px);
+    --bloom-size-mobile: clamp(80px, 15vw, 150px);
+    --bloom-offset: clamp(-100px, -10vw, -50px);
   }
 }
