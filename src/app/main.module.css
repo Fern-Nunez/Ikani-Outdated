@@ -6,10 +6,6 @@
     overflow: hidden;
     max-width: 2560px;
 }
-.body{
-    box-sizing: border-box;
-    overflow-y: hidden;
-}
 
 .topbar{
     height: 70px;
